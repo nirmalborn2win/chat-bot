@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('http://ghostcode.in/wp-content/uploads/2016/09/super_hero_whatsapp_background_by_x_ama-d8fr7iz.jpg');
+  }

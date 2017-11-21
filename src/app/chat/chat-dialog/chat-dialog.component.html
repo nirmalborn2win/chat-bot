@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let message of messages | async">
+
+            <div class="message" [ngClass]="{ 'from': message.sentBy === 'bot',
+                                    'to':  message.sentBy === 'user' }">
+              {{ message.content }}
+            </div>
+        </ng-container>
+
+     
+            <div class="message-input-container input-group">
+                <input class="input-container-bg-color" name="bot" placeholder="Type a message" [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text">
+                <span class="input-group-btn">
+    <button type="button" class="btn btn-custom  btn-circle btn-xl"  (click)="sendMessage()"><i class="glyphicon glyphicon glyphicon-play"></i></button>
+  </span>
+            </div>
+       
+    </div>
+</div>

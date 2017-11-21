@@ -4,5 +4,8 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  dialogflow: {
+    bot: 'a49f57c05d1b4eda93a0752e2e2d286e'
+  }
 };
